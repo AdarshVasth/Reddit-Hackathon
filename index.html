@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModMate AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>ModMate AI</h1>
+        <p>Smart moderation assistant for Reddit communities</p>
+    </header>
+
+    <section class="dashboard">
+        <div class="card">
+            <h2>Pending Reports</h2>
+            <p id="pendingCount">3</p>
+        </div>
+
+        <div class="card">
+            <h2>Spam Detected</h2>
+            <p>12 Today</p>
+        </div>
+
+        <div class="card">
+            <h2>Response Time</h2>
+            <p>2 mins avg</p>
+        </div>
+    </section>
+
+    <section class="posts-section">
+        <h2>Reported Posts Queue</h2>
+
+        <div id="postsContainer">
+            <div class="post-card">
+                <h3>FREE CRYPTO GIVEAWAY!!!</h3>
+                <p>Click this suspicious link now...</p>
+                <span class="tag spam">Spam Risk: High</span>
+                <span class="tag">Suggested Flair: Scam Warning</span>
+
+                <div class="actions">
+                    <button class="approve">Approve</button>
+                    <button class="remove">Remove</button>
+                    <button class="warn">Warn User</button>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <h3>Need help learning Python</h3>
+                <p>Beginner asking for resources.</p>
+                <span class="tag safe">Safe Post</span>
+                <span class="tag">Suggested Flair: Help</span>
+
+                <div class="actions">
+                    <button class="approve">Approve</button>
+                    <button class="remove">Remove</button>
+                    <button class="warn">Warn User</button>
+                </div>
+            </div>
+
+            <div class="post-card">
+                <h3>You all are idiots</h3>
+                <p>This subreddit is trash...</p>
+                <span class="tag toxic">Toxic Language</span>
+                <span class="tag">Suggested Flair: Rant</span>
+
+                <div class="actions">
+                    <button class="approve">Approve</button>
+                    <button class="remove">Remove</button>
+                    <button class="warn">Warn User</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
